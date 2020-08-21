@@ -1,0 +1,15 @@
+{# templates/main/index.html.twig #} {% extends 'base.html.twig' %} {% block
+body %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      {% if app.user != null %}
+        Vous vous êtes bien connecté.
+        <img src="https://media.tenor.com/images/3da8df7918b0721f459d5d47f9e2b784/tenor.gif">
+      {% else %}
+        Vous n'êtes pas connecté 😭😭😭
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}
